@@ -3,8 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.menu{
-}
+
 
 .btn-outline-secondary{
     color: black !important;
@@ -13,4 +12,26 @@
 
 .btn-outline-secondary:hover{
     color: white !important;
+}
+
+input{
+    padding: 15px !important;
+}
+
+@media screen and (max-width: 700px) {
+    #container{
+        width: 102.9vw !important;
+    }
+    main div{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    input{
+        padding: 0px !important;
+    }
+
+    form div{
+        flex-direction: column;
+        width: 100%;
+    }
 }
