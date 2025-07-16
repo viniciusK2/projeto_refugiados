@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doação Refugees</title>
+    <style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  p.description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    outline: none;
+  }
+
+  input[type="number"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  }
+
+  button {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #43a047;
+    box-shadow: 0 8px 20px rgba(67, 160, 71, 0.6);
+  }
+
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Ajude os Refugiados</h1>
+    <p class="description">Digite o valor da doação:</p>
+    <input type="number" id="valor" step="0.01" placeholder="Ex: 10.00" min="0" />
+    <button onclick="doacao()">Doar</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+
+</html>
